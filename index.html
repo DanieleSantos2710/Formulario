@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Book Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de Livros</h1>
+    <p id="description">Responda de acordo com sua opinião</p>
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name"> Nome <input id="name" type="text" placeholder="Nome completo" required /> </label>
+      <label id="email-label" for="email"> E-mail <input id="email" type="email" placeholder="Email" required /> </label>  
+      <label id="number-label" for="number"> Idade <input id="number" type="number" max="200" min="12" placeholder="Idade" /> </label>
+      <label><input type="radio" value="female" name="male" />Mulher </label>
+      <label><input type="radio" value="male" name="male" />Homem </label>
+      <label><input type="radio" value="other" name="male" />Outro </label>
+    </fieldset>
+    <fieldset>
+      <p>Qual gênero literário você prefere</p>
+      <label for="fantasia"><input id="fantasia" type="checkbox" value="1" required /> Fantasia </label>
+      <label for="distopia"><input id="distopia" type="checkbox" value="2" required /> Distopia </label>
+      <label for="terror"><input id="terror" type="checkbox" value="3" required /> Terror </label>
+      <label for="suspense"><input id="suspense" type="checkbox" value="4" required /> Suspense </label>
+      <label for="romance"><input id="romance" type="checkbox" value="5" required /> Romance </label>
+      <label for="aventura"><input id="aventura" type="checkbox" value="6" required /> Aventura </label>
+      <label for="conto"><input id="conto" type="checkbox" value="7" required />Conto </label>
+      <label for="humor"><input id="humor" type="checkbox" value="8" required /> Humor </label>
+      <label for="crimes reais"><input id="crimes reais" type="checkbox" value="9" required />Crimes Reais </label>
+      <label for="infantil"><input id="infantil" type="checkbox" value="10" />Ifantil </label>
+      <label for="outro"><input id="outro" type="checkbox" value="11" />Outro </label>
+      <label for="dropdown" id="dropdown">Qual dessas formas você prefere?
+        <select id="dropdown">
+          <option value="1">livro digital </option>
+          <option value="2">livro fisico </option>
+          <option value="3">outro </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>    
+      <label for="book" id="text-book">Indique um livro e uma autora/o</label>
+        <textarea id="book" name="book" rows="2" cols="20"> </textarea>
+    </fieldset>
+    <input id="submit" type="submit">          
+  </form>    
+  </body>
+</html>   
